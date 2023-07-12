@@ -29,10 +29,20 @@ const Dashboard = () => {
       setUsers(...allUserData);
       setUserInfoLoaded(true);
     }
+
+    /**after 2 sec the color will be change dynamically */
+    // setTimeout(() => {
+    //   customColor("--primary-color", "#0000FF");
+    // }, 2000);
+
   }, [allUserData]);
 
+  const customColor = (colorName, colorCode) => {
+    document.documentElement.style.setProperty(colorName, colorCode);
+  };
+
   return (
-    <div className=" min-h-screen min-w-screen m-0 p-0 ">
+    <div className=" min-h-screen min-w-screen m-0 p-0">
       <br />
       <div className="flex-col content-center mx-8 my-8">
         <div className="container min-h-full min-w-full flex-col mx-auto pb-0 p-6 border-2 border-b-0 border-transparent bg-transparent shadow-2xl">
@@ -42,7 +52,7 @@ const Dashboard = () => {
             <div className="float-right text-sm mr-4">
               <BlueButton btnText="View Subscription" />
             </div>
-            <div className="relative w-11 h-11 mr-3 float-right flex bg-slate-200/90 rounded-md items-center justify-center">
+            <div className="relative w-11 h-11 mr-3 float-right flex bg-gray-dark rounded-md items-center justify-center">
               <FilterIcon />
             </div>
           </div>
@@ -51,7 +61,7 @@ const Dashboard = () => {
               <div className="w-full min-h-full overflow-x-auto ">
                 <table className="w-full border-separate border-spacing-y-2">
                   <thead>
-                    <tr className=" tracking-wide align-bottom text-left text-gray-600 bg-transparent border-b shadow-slate-50">
+                    <tr className=" tracking-wide align-bottom text-left text-black-400 bg-transparent border-b ">
                       <td className="px-4 py-3 whitespace-nowrap">
                         Name <DownIcon />
                       </td>
@@ -78,7 +88,7 @@ const Dashboard = () => {
                       </td>
                     </tr>
                   </thead>
-                  <tbody className="bg-slate-200/90">
+                  <tbody className="bg-gray-dark">
                     {/* add user info component when rendering is finish */}
                     {userInfoLoaded ? (
                       <UserInfo userData={users} />
@@ -87,7 +97,7 @@ const Dashboard = () => {
                         <td colSpan="7" className="px-4 py-3 text-center">
                           <span
                             className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md 
-                            border border-transparent font-semibold bg-blue-500 text-white text-sm"
+                            border border-transparent font-semibold bg-primary-dark text-white text-sm"
                           >
                             <span
                               className="animate-spin inline-block w-4 h-4 border-[3px] border-current 

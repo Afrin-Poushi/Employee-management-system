@@ -53,7 +53,7 @@ const UserInfo = (props) => {
   return (
     <>
       {users.map((user) => (
-        <tr className="text-gray-700 gap-1.5" key={user.id}>
+        <tr className="text-black-300 gap-1.5" key={user.id}>
           <td className="px-4 py-3 border">
             <div className="flex items-center text-sm">
               <div className="relative w-12 h-12 mr-3 rounded-full md:block">
@@ -68,10 +68,10 @@ const UserInfo = (props) => {
                 <div className="absolute inset-0 rounded-full shadow-inner"></div>
               </div>
               <div>
-                <p className="font-semibold text-black">
+                <p className="font-semibold text-black-600">
                   {user.firstName + " " + user.lastName}
                 </p>
-                <p className="text-xs text-gray-600">{user.username}</p>
+                <p className="text-xs text-black-300">{user.username}</p>
               </div>
             </div>
           </td>
@@ -95,7 +95,7 @@ const UserInfo = (props) => {
           <td className="px-4 py-3 text-sm font-semibold border flex ">
             <IconButton
               IconName={<PencilIcon></PencilIcon>}
-              IconColor={"blue"}
+              IconColor={"primary"}
               on_click={(action = "Edit", id = user.id) =>
                 handleClick(action, id)
               }

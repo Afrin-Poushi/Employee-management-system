@@ -147,7 +147,7 @@ const Profile = () => {
         <h2 className="font-semibold text-gray-800 text-4xl">Edit Profile</h2>
         {/* Profile Image */}
         <div className="relative">
-          <div className="w-36 h-36 bg-indigo-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-8 flex items-center justify-center">
+          <div className="w-36 h-36 bg-primary-lighter mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-8 flex items-center justify-center">
             {
               <img
                 className="w-25 h-25 -top-2 rounded-full"
@@ -277,7 +277,7 @@ const Profile = () => {
           </div>
 
           <div className="flex justify-end mt-6">
-            <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-gray-600">
+            <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-primary rounded-md hover:bg-primary-light focus:outline-none">
               Save
             </button>
           </div>

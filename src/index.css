@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-color: #6A13F4;
+}
+
+.delete-icon {
+    background-color: theme('colors.red.DEFAULT');
+
+}
+
+.delete-icon:hover {
+    background-color: theme('colors.red.light');
+}
+
+.edit-icon {
+    background-color: theme('colors.primary.DEFAULT');
+
+}
+
+.edit-icon:hover {
+    background-color: theme('colors.primary.light');
+}
