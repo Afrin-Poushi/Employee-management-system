@@ -34,7 +34,6 @@ const Dashboard = () => {
     // setTimeout(() => {
     //   customColor("--primary-color", "#0000FF");
     // }, 2000);
-
   }, [allUserData]);
 
   const customColor = (colorName, colorCode) => {
@@ -49,6 +48,8 @@ const Dashboard = () => {
           <div className="font-semibold text-3xl">
             {" "}
             Employees
+            {/* <i className="kt-brand"></i>
+            <i className="p-dashboard text-sm text-stone-400"/> */}
             <div className="float-right text-sm mr-4">
               <BlueButton btnText="View Subscription" />
             </div>

@@ -5,7 +5,6 @@ const IconButton = (props) => {
   const iconClassName = `mr-3 my-3 py-1 px-2 text-white rounded focus:shadow-outline ${
     color == "primary" ? "edit-icon" : "delete-icon"
   } `;
-  console.log(iconClassName);
   return (
     <div>
       <button

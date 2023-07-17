@@ -1,0 +1,364 @@
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url("../fonts/Inter-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* :root {
+    --inter-regular: 400;
+    --inter-medium: 500;
+    --inter-semiBold: 600;
+    font-family: "Inter", sans-serif;
+} */
+
+/* All header styles */
+h1 {
+    font-family: "Inter";
+    font-size: 94px;
+    line-height: 130%;
+    letter-spacing: -2.5px;
+}
+
+h2 {
+    font-family: "Inter";
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    font-family: "Inter";
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0px;
+}
+
+h4 {
+    font-family: "Inter";
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+}
+
+h5 {
+    font-family: "Inter Medium";
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0px;
+}
+
+h6 {
+    font-family: "Inter Medium";
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.15px;
+}
+
+/* Subtitles Styles */
+.subtitle-1 {
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: .15px;
+}
+
+.subtitle-2 {
+    font-family: "Inter Medium";
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.1px;
+}
+
+/* All titles Styles */
+.title-xl {
+    font-family: "Inter Medium";
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.title-lg {
+    font-family: "Inter Medium";
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.title-md {
+    font-family: "Inter Medium";
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.title-sm {
+    font-family: "Inter Medium";
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.title-xs {
+    font-family: "Inter Medium";
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.title-xxs {
+    font-family: "Inter Medium";
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+/* Body Styles */
+.body-1 {
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -1.5px;
+}
+
+.body-2 {
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.body-3 {
+    font-family: "Inter";
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.75px;
+}
+
+.body-4 {
+    font-family: "Inter";
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.75px;
+}
+
+caption {
+    font-family: "Inter";
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+}
+
+.overline {
+    font-family: "Inter";
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icoMoon/icomoon.eot?j45fq');
+    src:  url('../fonts/icoMoon/icomoon.eot?j45fq#iefix') format('embedded-opentype'),
+      url('../fonts/icoMoon/icomoon.ttf?j45fq') format('truetype'),
+      url('../fonts/icoMoon/icomoon.woff?j45fq') format('woff'),
+      url('../fonts/icoMoon/icomoon.svg?j45fq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  /* .p-dashboard:before {
+    content: "\e900";
+  }
+  .p-location:before {
+    content: "\e901";
+  }
+  .p-check:before {
+    content: "\e902";
+  }
+  .p-arrow-down:before {
+    content: "\e903";
+  } */
+  
+
+  [class^="kt-"], [class*=" kt-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .kt-account-circle:before {
+    content: "\e900";
+  }
+  .kt-activities:before {
+    content: "\e901";
+    color: #fff;
+  }
+  .kt-addorder:before {
+    content: "\e902";
+    color: #fff;
+  }
+  .kt-aggregators:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .kt-alarm-snooze-filled:before {
+    content: "\e904";
+  }
+  .kt-analytics:before {
+    content: "\e905";
+    color: #fff;
+  }
+  .kt-arrow-down-outlined:before {
+    content: "\e906";
+  }
+  .kt-arrow-right-outlined:before {
+    content: "\e907";
+  }
+  .kt-article:before {
+    content: "\e908";
+  }
+  .kt-bin:before {
+    content: "\e909";
+  }
+  .kt-brand:before {
+    content: "\e90a";
+    color: #fff;
+  }
+  .kt-briefcase:before {
+    content: "\e90b";
+  }
+  .kt-building-store:before {
+    content: "\e90c";
+  }
+  .kt-business:before {
+    content: "\e90d";
+    color: #fff;
+  }
+  .kt-copy:before {
+    content: "\e90e";
+  }
+  .kt-dashboard:before {
+    content: "\e90f";
+  }
+  .kt-dashboard-customize:before {
+    content: "\e910";
+  }
+  .kt-edit:before {
+    content: "\e911";
+  }
+  .kt-explore:before {
+    content: "\e912";
+  }
+  .kt-eye:before {
+    content: "\e913";
+  }
+  .kt-hamburger-menu:before {
+    content: "\e914";
+  }
+  .kt-history:before {
+    content: "\e915";
+  }
+  .kt-hub:before {
+    content: "\e916";
+  }
+  .kt-integration:before {
+    content: "\e917";
+    color: #fff;
+  }
+  .kt-language:before {
+    content: "\e918";
+  }
+  .kt-links:before {
+    content: "\e919";
+    color: #fff;
+  }
+  .kt-location:before {
+    content: "\e91a";
+    color: #fff;
+  }
+  .kt-map-pin:before {
+    content: "\e91b";
+  }
+  .kt-menu:before {
+    content: "\e91c";
+    color: #fff;
+  }
+  .kt-oni:before {
+    content: "\e91d";
+    color: #fff;
+  }
+  .kt-permission:before {
+    content: "\e91e";
+    color: #fff;
+  }
+  .kt-photo-plus:before {
+    content: "\e91f";
+  }
+  .kt-plus:before {
+    content: "\e920";
+  }
+  .kt-printer:before {
+    content: "\e921";
+    color: #fff;
+  }
+  .kt-profile:before {
+    content: "\e922";
+  }
+  .kt-promo:before {
+    content: "\e923";
+    color: #fff;
+  }
+  .kt-rating:before {
+    content: "\e924";
+  }
+  .kt-role:before {
+    content: "\e925";
+    color: #fff;
+  }
+  .kt-search:before {
+    content: "\e926";
+  }
+  .kt-stack-push:before {
+    content: "\e927";
+  }
+  .kt-three-dots-vertical:before {
+    content: "\e928";
+  }
+  .kt-tools-kitchen:before {
+    content: "\e929";
+  }
+  .kt-truck-delivery:before {
+    content: "\e92a";
+  }
+  .kt-webhooks:before {
+    content: "\e92b";
+    color: #fff;
+  }
+  .kt-webshop:before {
+    content: "\e92c";
+    color: #fff;
+  }
+  .kt-x:before {
+    content: "\e92d";
+  }
+  
